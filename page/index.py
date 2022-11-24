@@ -251,11 +251,157 @@ Created on Wed Nov 16 09:59:13 2022
 #     if not (son%n):
 #         print(f"{son} soni {n} songa bo'linadi")
 
+# car_0={'model':'ferrari', 'rang':'qizil'}
+# print(car_0['model'])
+# print(car_0['rang'])
+
+# talaba_0={'ism':'uktam', 'yosh':20, 't_yil':2002}
+# print(f"{talaba_0['ism'].title()},\
+#  {talaba_0['t_yil']}-da tug'ilgan,\
+#   {talaba_0['yosh']} yoshda ")
+#
+# talaba_0['kurs']=4
+# talaba_0['fakultet']='informatika'
+# print(talaba_0)
+#
+# talaba_1={}
+#
+# talaba_1['ism']='uktam hikmatillayev'
+# talaba_1['yosh']=20
+# talaba_1['kasb']='talaba'
+# print(talaba_1)
+# print(f" {talaba_1['kasb'].title()} {talaba_1['ism'].title()}, {talaba_1['yosh']} yoshda ")
+#
+# talaba_1['yosh']=22
+# print(f"{talaba_1['kasb'].title()} {talaba_1['yosh']} yoshda")
+#
+# del talaba_1['ism']
+# print(talaba_1)
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+#     }
+#
+# phone = telefonlar['hasan']
+# print(f"Hasanning telefoni {phone}")
+# phone = telefonlar.get('hasan','Bunday ism mavjud emas')
+# phone = telefonlar.get('hasan')
+# print(phone)
+# otam={
+#     'ism':'ravshan xodjaqulov',
+#     'yil':'1970',
+#     'vil':'qashqadaryo',
+#     'tuman':'Kasbi',
+#     'mfy':'istiqlol',
+#     'kocha':'tutzor'
+# }
+# print(f"Otam {otam['ism'].title()}, {otam['yil']}-yilda {otam['vil'].title()} viloyati {otam['tuman'].title()} tumani {otam['mfy'].title()} mahallasi {otam['kocha'].title()} ko'chasida tugilgan")
 
 
+# taomlar={
+#     'otam':'osh',
+#     'onam':'shorva',
+#     'akam':'baliq',
+#     'ukam':'manti',
+#     'singlim':'sumalak'
+# }
+# print(f"Otamning sevimli taomi {taomlar['otam']}, onamning sevimli taomi {taomlar['onam']}, akamni sevimli taomi {taomlar['akam']}, ukamniki {taomlar['ukam']}")
+
+# dictionary={
+#     'apple':'olma',
+#     'apricot':'shaftoli',
+#     'banana':'banan',
+#     'hand':'qo"L',
+#     'car':'mashina',
+#     'hair':'soch',
+#     'bread':'non',
+#     'phone':'telefon',
+#     'notebook':'daftar',
+#     'eye':'ko"z'
+# }
+#
+# for kalit, qiymat in dictionary.items():
+#     print(f"{kalit.title()} ning tarjimasi {qiymat}")
+#
+# kalit=input("Ixtiyoriy so'zni kiriting: ").lower()
+# print(dictionary.get(kalit, "Bunday so'z mavjd emas!"))
+
+# if new in dictionary:
+#     print(f" {new.title()} so'zi {dictionary[new].title()} deb tarjima qilinadi.")
+# else:
+#     print("Bunday so'z mavjud emas!")
 
 
+# mahsulotlar = {
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+#
+# bozorlik=['anor','uzum','non','baliq']
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]} so'm")
+#
+# for buyum in bozorlik:
+#     if buyum not in mahsulotlar:
+#         print(f"Iltimos, do'koningizga {buyum} ham olib keling")
+#
+# print("Do'konimizdagi mahsulotlar:")
+# for mahsulot in sorted(mahsulotlar):
+#     print(mahsulot.title())
 
+# dictionary={
+#     'apple':'olma',
+#     'apricot':'shaftoli',
+#     'banana':'banan',
+#     'hand':'qo"L',
+#     'car':'mashina',
+#     'hair':'soch',
+#     'bread':'non',
+#     'phone':'telefon',
+#     'notebook':'daftar',
+#     'eye':'ko"z'
+# }
+#
+# for k,q in sorted(dictionary.items()):
+#     print(f"{k}-{q}")
+
+
+# davlatlar={
+#     'uzbekistan':'tashkent',
+#     'rossiya':'moskva',
+#     "qirg\'isizton":"bishkek",
+#     'turkiya':'anqara',
+#     "qozog\'iston":"ostona"
+# }
+# for davlat in sorted(davlatlar.keys()):
+#     print(davlat.title())
+#
+#
+# print("Poytaxtlar")
+# for poytaxt in sorted(davlatlar.values()):
+#     print(poytaxt.title())
+
+
+davlatlar={
+    'uzbekistan':'tashkent',
+    'rossiya':'moskva',
+    "qirg\'isizton":"bishkek",
+    'turkiya':'anqara',
+    "qozog\'iston":"ostona"
+}
+kalit=input("Qaysi davlatning poytaxtini bilishni hohlaysiz: ").lower()
+
+if kalit in davlatlar:
+    print(f" {kalit.title()} poytaxti {davlatlar[kalit].title()} shahri")
+else:
+    print("Kechirasiz, bizda bu haqida ma'lumot yo'q")
 
 
 
